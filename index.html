@@ -39,6 +39,26 @@
     </button>
   </div>
 
+  <!-- HTML5 audio player (only shown when audio exists for the current clip) -->
+  <div id="audioPlayerContainer" style="display:none;margin-top:0.75rem;" aria-hidden="true">
+    <audio id="audioElement" controls preload="none" style="width:100%;max-width:44rem;display:block"></audio>
+    <div style="margin-top:0.5rem;display:flex;gap:0.5rem;align-items:center;">
+      <button id="pauseAudioBtn" aria-label="Pause audio">⏸ Pause</button>
+      <button id="replayAudioBtn" aria-label="Replay audio">🔁 Replay</button>
+      <label style="margin-left:auto;display:flex;gap:0.5rem;align-items:center;">
+        Rate:
+        <select id="ttsRateSelect" aria-label="Text to speech rate">
+          <option value="0.6">0.6x</option>
+          <option value="0.8">0.8x</option>
+          <option value="1" selected>1x</option>
+          <option value="1.2">1.2x</option>
+          <option value="1.5">1.5x</option>
+          <option value="2">2x</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
   <input
     type="text"
     id="playList"
