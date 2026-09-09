@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q3ese_ls0_page_11</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body role="document">
+
+  <main role="main" aria-label="Lesson player interface">
+<h1 id="lessonTitle" aria-label="Lesson title"></h1>
+
+<div
+  class="speaking-indicator"
+  id="speakingIndicator"
+  role="status"
+  aria-live="polite"
+  aria-label="Speaking status">
+  <span class="pulse">🔊</span> Speaking...
+</div>
+
+<section id="lessonMode">
+
+  <p id="speaker" aria-label="Speaker name"></p>
+
+  <p id="q" aria-live="polite" aria-label="Current clip position"></p>
+
+  <p id="keyWords" aria-label="Keywords"></p>
+
+  <!-- MAIN PLAY BUTTON (Audio or TTS Fallback) -->
+  <div class="main-player-container">
+    <button id="playMain" class="play-button" aria-label="Play audio or text-to-speech">
+      ▶ Play
+    </button>
+    <button id="stopMain" class="stop-button" aria-label="Stop playback">
+      ⏹ Stop
+    </button>
+  </div>
+
+  <input
+    type="text"
+    id="playList"
+    
+    placeholder="Enter a word, or numbers like 1,2,3 , or 5-10">
+
+  <label style="display:block;margin-top:0.5rem;font-weight:normal;">
+    <input type="checkbox" id="usePlayList">
+    Use playlist (filter by word, or numbers separeted by commas, or a range.)
+  </label>
+
+  <details id="definition" aria-label="Definition section">
+    <summary>Definition</summary>
+    <p id="def"></p>
+  </details>
+
+  <details
+    id="illustrations"
+    style="display:none;"
+    aria-label="Illustration section">
+
+    <summary>Illustration</summary>
+
+    <img
+      id="image"
+      alt="Related illustration"
+      style="display:none;">
+  </details>
+
+  <details
+    id="englishDetails"
+    
+    aria-label="English script of audio">
+
+    <summary>English Script:</summary>
+
+    <p id="english"></p>
+  </details>
+
+  <div id="scrambleCheckboxContainer">
+
+    <label id="scrambleCheckboxLabel">
+      <input
+        type="checkbox"
+        id="scrambleCheckbox"
+        aria-label="Toggle scrambled script">
+      Scramble Script
+    </label>
+
+    <label id="speakScrambledLabel">
+      <input
+        type="checkbox"
+        id="speakScrambledCheckbox"
+        aria-label="Speak scrambled text with pauses">
+      Speak Scrambled
+    </label>
+
+  </div>
+
+  <p id="scrambledText"></p>
+
+  <details
+    id="arabicDetails"
+    
+    aria-label="Arabic translation of script">
+
+    <summary>Arabic Translation:</summary>
+
+    <p id="arabic"></p>
+  </details>
+
+  <p id="refer_to_container">
+    <strong>Refer to:</strong>
+    <span id="refer_to"></span>
+  </p>
+
+  <p id="back_to_container">
+    <strong>Back to:</strong>
+    <span id="back_to"></span>
+  </p>
+
+  <hr>
+
+  <div
+    class="controls"
+    role="group"
+    aria-label="Navigation controls">
+
+    <input
+      type="number"
+      id="audioIndex"
+      inputmode="numeric"
+      min="1"
+      placeholder="#"
+      aria-label="Enter clip number">
+
+    <button id="search" aria-label="Search for audio by number">
+      🔍
+    </button>
+
+    <button id="prev" aria-label="Previous audio clip">
+      ◀
+    </button>
+
+    <button id="next" aria-label="Next audio clip">
+      ▶
+    </button>
+
+    <label style="font-weight:normal;">
+      <input
+        type="checkbox"
+        id="autoPlay"
+        aria-checked="false">
+      Auto play next audio clip
+    </label>
+
+  </div>
+
+  <div id="questionBasedOnAudio"></div>
+
+  <details aria-label="Text-to-speech options">
+
+    <summary>TTS (Read Script Aloud)</summary>
+
+    <div
+      class="tts-buttons"
+      role="group"
+      aria-label="TTS controls">
+
+      <button id="speakEnglish">
+        TTS-English
+      </button>
+
+      <button id="speakArabic">
+        TTS-Arabic
+      </button>
+
+      <button id="stop">
+        Stop TTS
+      </button>
+
+      <button id="speakSelection">
+        TTS-Selected
+      </button>
+
+    </div>
+
+  </details>
+
+  <details
+    id="answerDetails"
+    aria-label="Answer section">
+
+    <summary>Answer</summary>
+
+    <div id="answer"></div>
+
+  </details>
+
+  <hr>
+
+  <small>
+    💡 Tip: Use ← / → to navigate.
+  </small>
+
+</section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>
+      Created by
+      <span>Eltayeb Mohamed</span>
+      |
+      <span>© 2025 Eltayeb Mohamed</span>
+      . All rights reserved.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

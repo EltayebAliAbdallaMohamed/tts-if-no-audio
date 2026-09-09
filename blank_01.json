@@ -1,0 +1,31 @@
+{
+  "title": "Q3e SE RW3 Unit 01",
+  "sentences": [
+    {
+      "speaker": "Narrator",
+      "keyWord": "Classroom",
+      "definition": "A room where lessons are taught",
+      "english": "Why don’t you eat fast food",
+      "arabic": "الفصل الدراسي",
+      "refer_to": "",
+      "back_to": "",
+      "audio": "assets/audio/Why don’t you eat fast food.mp3",
+      "audioQuestion": "",
+      "answer": "",
+      "Image": ""
+    },
+    {
+      "speaker": "Narrator",
+      "keyWord": "Unit",
+      "definition": "A section of a course",
+      "english": "Every unit in Q starts with a question",
+      "arabic": "كل وحدة في Q تبدأ بسؤال",
+      "refer_to": "",
+      "back_to": "",
+      "audio": "assets/audio/Every unit in Q starts with a question.mp3",
+      "audioQuestion": "What does every unit start with?",
+      "answer": "Every unit starts with a question.",
+      "Image": ""
+    }
+  ]
+}
